@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color:whitesmoke ;
 }
 
@@ -18,4 +18,104 @@ body {
 @keyframes rolling-disk {
     0%   { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+} */
+ /* General Background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
+/* Player Container */
+.player-wrapper {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  padding: 2rem;
+  width: 320px;
+  box-shadow: 25px 25px 40px rgba(0, 0, 0, 0.1),
+              -10px -10px 20px rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+/* Song and Artist Titles */
+.title #song_name,
+.title #artist_name {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+  color: #333;
+}
+
+/* Album Art */
+.art {
+  display: block;
+  width: 175px;
+  height: 175px;
+  margin: 1.5rem auto;
+  border-radius: 50%;
+  border: 8px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 16px 16px 30px #c1c1c1, -16px -16px 30px #ffffff;
+  animation: rolling-disk 7.5s linear infinite;
+  object-fit: cover;
+}
+
+/* Range Slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 1rem 0;
+  height: 5px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: inset 2px 2px 5px #c8c8c8, inset -2px -2px 5px #fff;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+/* Media Control Buttons */
+.media_controls {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.control_btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    inset 4px 4px 10px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 10px rgba(255, 255, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+.control_btn:hover {
+  box-shadow:
+    4px 4px 12px rgba(0, 0, 0, 0.2),
+    -4px -4px 12px rgba(255, 255, 255, 0.4);
+}
+
+/* Spinning Animation */
+@keyframes rolling-disk {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
