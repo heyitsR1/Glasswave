@@ -2,7 +2,7 @@
 
 **Glasswave** is a minimalist, translucent-glass-themed music player built with vanilla HTML, CSS, and JavaScript.
 
-<img width="992" height="906" alt="image" src="https://github.com/user-attachments/assets/176b1ed8-24c6-4511-9095-5a1a3b1a7b0f" />
+<img width="900" height="880" alt="image" src="https://github.com/user-attachments/assets/460d1203-0b59-4b53-9009-28022d130491" />
 
 
 ## 🧊 About the Project
