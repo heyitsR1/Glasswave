@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
         "Ed Sheeran — Perfect",
         "Prateek Kuhad — Co2",
         "Taylor Swift — Love Story",
-        "The Beatles — Here Comes the Sun",
+        "The Beatles — Here Comes The Sun",
         "The Rare Occasions — Notion",
         "Two Door Club — What You Know",
         "The Weeknd — Starboy",
